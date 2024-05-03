@@ -29,3 +29,5 @@ then execute the binary file.
 Read and write mutex, allow us to lock writes and reads. In this case we lock the writes to 1 at a time, and the reads N at a time using RLock() and RUnlock()
 1 -> write
 N -> read
+
+### Cache system
