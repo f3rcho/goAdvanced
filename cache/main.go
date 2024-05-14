@@ -9,7 +9,7 @@ import (
 
 func Fibonacci(n int) int {
 	if n <= 1 {
-		return 1
+		return n
 	}
 	return Fibonacci(n-1) + Fibonacci(n-2)
 }
@@ -47,7 +47,9 @@ func (m *Memory) Get(key int) (interface{}, error) {
 }
 
 func GetFibonacci(n int) (interface{}, error) {
-	return Fibonacci(n), nil
+	fib := Fibonacci(n)
+	fmt.Printf("Fib: %d, of n:%d\n", fib, n)
+	return fib, nil
 }
 
 func main() {
