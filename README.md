@@ -32,3 +32,6 @@ N -> read
 
 ### Cache system
 the concurrent cache system. With the use of Mutex, we could lock and unlock the part of the program needed.
+
+## Design Patterns in GO
+see [Design Patterns](https://refactoring.guru/es/design-patterns/)
